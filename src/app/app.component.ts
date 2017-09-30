@@ -10,7 +10,7 @@ import { AppService } from '../service/app.service';
 export class AppComponent implements OnInit {
   pageTitle: string = '';
   errorMessage: string = '';
-  
+  ishome:boolean=true;
   constructor(private _appService: AppService) { }
     ngOnInit(): void {
         this._appService.sayHello()
