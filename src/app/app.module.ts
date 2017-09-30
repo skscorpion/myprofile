@@ -13,7 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 
 
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent }, 
+   { path: '', redirectTo: 'home', pathMatch:'full' }, 
     { path: 'home', component: HomeComponent }, 
     { path: 'about', component: AboutComponent },
     { path: 'projects', component: ProjectsComponent },

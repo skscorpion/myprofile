@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { AppService } from '../service/app.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +11,7 @@ import { AppService } from '../service/app.service';
 export class AppComponent implements OnInit {
   pageTitle: string = '';
   errorMessage: string = '';
-  ishome:boolean=true;
+
   constructor(private _appService: AppService) { }
     ngOnInit(): void {
         this._appService.sayHello()

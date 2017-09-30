@@ -60,7 +60,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AboutComponent = (function () {
     function AboutComponent() {
-        this.isabout = true;
     }
     AboutComponent.prototype.ngOnInit = function () {
     };
@@ -127,7 +126,6 @@ var AppComponent = (function () {
         this._appService = _appService;
         this.pageTitle = '';
         this.errorMessage = '';
-        this.ishome = true;
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -191,7 +189,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */] },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */] },
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_7__about_about_component__["a" /* AboutComponent */] },
     { path: 'projects', component: __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__["a" /* ProjectsComponent */] },
@@ -271,7 +269,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ContactComponent = (function () {
     function ContactComponent() {
-        this.iscontact = true;
     }
     ContactComponent.prototype.ngOnInit = function () {
     };
@@ -394,7 +391,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var HomeComponent = (function () {
     function HomeComponent() {
-        this.ishome = true;
     }
     HomeComponent.prototype.ngOnInit = function () {
     };
@@ -434,7 +430,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/navigation/navigation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<nav class=\"w3-sidebar w3-bar-block w3-small w3-hide-small w3-center\">\n  <!-- Avatar image in top left corner -->\n  <img src=\"/w3images/avatar_smoke.jpg\" style=\"width:100%\">\n  <a routerLink=\"/home\" class=\"w3-bar-item w3-button w3-padding-large\" [ngClass]=\"{'w3-black':ishome,'w3-hover-black':!ishome}\">\n    <i class=\"fa fa-home w3-xxlarge\"></i>\n    <p>HOME</p>\n  </a>\n  <a routerLink=\"/about\" class=\"w3-bar-item w3-button w3-padding-large\" [ngClass]=\"{'w3-black':isabout,'w3-hover-black':!isabout}\">\n    <i class=\"fa fa-user w3-xxlarge\"></i>\n    <p>ABOUT</p>\n  </a>\n  <a routerLink=\"/projects\" class=\"w3-bar-item w3-button w3-padding-large\" [ngClass]=\"{'w3-black':isprojects,'w3-hover-black':!isprojects}\">\n    <i class=\"fa fa-eye w3-xxlarge\"></i>\n    <p>PROJECTS</p>\n  </a>\n  <a routerLink=\"/contact\" class=\"w3-bar-item w3-button w3-padding-large\" [ngClass]=\"{'w3-black':iscontact,'w3-hover-black':!iscontact}\">\n    <i class=\"fa fa-envelope w3-xxlarge\"></i>\n    <p>CONTACT</p>\n  </a>\n</nav>\n\n<!-- Navbar on small screens (Hidden on medium and large screens) -->\n<div class=\"w3-top w3-hide-large w3-hide-medium\" id=\"myNavbar\">\n  <div class=\"w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small\">\n    <a routerLink=\"/home\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\">HOME</a>\n    <a routerLink=\"/about\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\">ABOUT</a>\n    <a routerLink=\"/projects\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\">PROJECTS</a>\n    <a routerLink=\"/contact\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\">CONTACT</a>\n  </div>\n</div>\n"
+module.exports = "\n<nav class=\"w3-sidebar w3-bar-block w3-small w3-hide-small w3-center\">\n  <!-- Avatar image in top left corner -->\n  <img src=\"/w3images/avatar_smoke.jpg\" style=\"width:100%\">\n  <a routerLink=\"/home\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla1=\"routerLinkActive\" [ngClass]=\"rla1.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-home w3-xxlarge\"></i>\n    <p>HOME</p>\n  </a>\n  <a routerLink=\"/about\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla2=\"routerLinkActive\" [ngClass]=\"rla2.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-user w3-xxlarge\"></i>\n    <p>ABOUT</p>\n  </a>\n  <a routerLink=\"/projects\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla3=\"routerLinkActive\" [ngClass]=\"rla3.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-eye w3-xxlarge\"></i>\n    <p>PROJECTS</p>\n  </a>\n  <a routerLink=\"/contact\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla4=\"routerLinkActive\" [ngClass]=\"rla4.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-envelope w3-xxlarge\"></i>\n    <p>CONTACT</p>\n  </a>\n</nav>\n\n<!-- Navbar on small screens (Hidden on medium and large screens) -->\n<div class=\"w3-top w3-hide-large w3-hide-medium\" id=\"myNavbar\">\n  <div class=\"w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small\">\n    <a routerLink=\"/home\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla11=\"routerLinkActive\" [ngClass]=\"rla11.isActive?'w3-black':'w3-hover-black'\">HOME</a>\n    <a routerLink=\"/about\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla22=\"routerLinkActive\" [ngClass]=\"rla22.isActive?'w3-black':'w3-hover-black'\">ABOUT</a>\n    <a routerLink=\"/projects\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla33=\"routerLinkActive\" [ngClass]=\"rla33.isActive?'w3-black':'w3-hover-black'\">PROJECTS</a>\n    <a routerLink=\"/contact\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla44=\"routerLinkActive\" [ngClass]=\"rla44.isActive?'w3-black':'w3-hover-black'\">CONTACT</a>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -456,7 +452,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var NavigationComponent = (function () {
     function NavigationComponent() {
-        this.ishome = true;
     }
     NavigationComponent.prototype.ngOnInit = function () {
     };
@@ -518,7 +513,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ProjectsComponent = (function () {
     function ProjectsComponent() {
-        this.isprojects = true;
     }
     ProjectsComponent.prototype.ngOnInit = function () {
     };
