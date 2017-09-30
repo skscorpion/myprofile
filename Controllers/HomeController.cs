@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyProfile.Controllers
 
 {
-    [Route("api/hello")]
+       [Route("api/[controller]")]
     public class HelloController : Controller
-    {
+    {     
         [HttpGet]
         public IActionResult Get()
         {

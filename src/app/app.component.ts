@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { AppService } from './app.service';
+import { AppService } from '../service/app.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+   //template: '<router-outlet></router-outlet>',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
