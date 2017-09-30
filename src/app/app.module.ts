@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
+import { PdfDownloaderComponent } from './pdf-downloader/pdf-downloader.component';
 
 
 const appRoutes: Routes = [
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     HomeComponent,
     ProjectsComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    PdfDownloaderComponent
   ],
   imports: [
     BrowserModule,

@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<!-- About Section -->\n  <div class=\"w3-content w3-justify w3-text-grey w3-padding-64\" id=\"about\">\n    <h2 class=\"w3-text-light-grey\">Senthil Kumar</h2>\n    <hr style=\"width:200px\" class=\"w3-opacity\">\n    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\n      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur\n      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n    </p>\n    <h3 class=\"w3-padding-16 w3-text-light-grey\">My Skills</h3>\n    <p class=\"w3-wide\">Photography</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:95%\"></div>\n    </div>\n    <p class=\"w3-wide\">Web Design</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\n    </div>\n    <p class=\"w3-wide\">Photoshop</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\n    </div><br>\n    \n    <div class=\"w3-row w3-center w3-padding-16 w3-section w3-light-grey\">\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">11+</span><br>\n        Partners\n      </div>\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">55+</span><br>\n        Projects Done\n      </div>\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">89+</span><br>\n        Happy Clients\n      </div>\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">150+</span><br>\n        Meetings\n      </div>\n    </div>\n\n    <button class=\"w3-button w3-light-grey w3-padding-large w3-section\">\n      <i class=\"fa fa-download\"></i> Download Resume\n    </button>\n    \n    <!-- Grid for pricing tables -->\n    <h3 class=\"w3-padding-16 w3-text-light-grey\">My Price</h3>\n    <div class=\"w3-row-padding\" style=\"margin:0 -16px\">\n      <div class=\"w3-half w3-margin-bottom\">\n        <ul class=\"w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off\">\n          <li class=\"w3-dark-grey w3-xlarge w3-padding-32\">Basic</li>\n          <li class=\"w3-padding-16\">Web Design</li>\n          <li class=\"w3-padding-16\">Photography</li>\n          <li class=\"w3-padding-16\">5GB Storage</li>\n          <li class=\"w3-padding-16\">Mail Support</li>\n          <li class=\"w3-padding-16\">\n            <h2>$ 10</h2>\n            <span class=\"w3-opacity\">per month</span>\n          </li>\n          <li class=\"w3-light-grey w3-padding-24\">\n            <button class=\"w3-button w3-white w3-padding-large w3-hover-black\">Sign Up</button>\n          </li>\n        </ul>\n      </div>\n\n      <div class=\"w3-half\">\n        <ul class=\"w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off\">\n          <li class=\"w3-dark-grey w3-xlarge w3-padding-32\">Pro</li>\n          <li class=\"w3-padding-16\">Web Design</li>\n          <li class=\"w3-padding-16\">Photography</li>\n          <li class=\"w3-padding-16\">50GB Storage</li>\n          <li class=\"w3-padding-16\">Endless Support</li>\n          <li class=\"w3-padding-16\">\n            <h2>$ 25</h2>\n            <span class=\"w3-opacity\">per month</span>\n          </li>\n          <li class=\"w3-light-grey w3-padding-24\">\n            <button class=\"w3-button w3-white w3-padding-large w3-hover-black\">Sign Up</button>\n          </li>\n        </ul>\n      </div>\n    <!-- End Grid/Pricing tables -->\n    </div>\n    \n    <!-- Testimonials -->\n    <h3 class=\"w3-padding-24 w3-text-light-grey\">My Reputation</h3>  \n    <img src=\"/w3images/bandmember.jpg\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:80px\">\n    <p><span class=\"w3-large w3-margin-right\">Chris Fox.</span> CEO at Mighty Schools.</p>\n    <p>Jane Doe saved us from a web disaster.</p><br>\n    \n    <img src=\"/w3images/avatar_g2.jpg\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:80px\">\n    <p><span class=\"w3-large w3-margin-right\">Rebecca Flex.</span> CEO at Company.</p>\n    <p>No one is better than Jane Doe.</p>\n  <!-- End About Section -->\n  </div>\n\n  "
+module.exports = "\n\n<!-- About Section -->\n  <div class=\"w3-content w3-justify w3-text-grey w3-padding-64\" id=\"about\">\n    <h2 class=\"w3-text-light-grey\">Senthil Kumar</h2>\n    <hr style=\"width:200px\" class=\"w3-opacity\">\n    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\n      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur\n      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n    </p>\n    <h3 class=\"w3-padding-16 w3-text-light-grey\">My Skills</h3>\n    <p class=\"w3-wide\">MVC</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:90%\"></div>\n    </div>\n    <p class=\"w3-wide\">C#</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\n    </div>\n    <p class=\"w3-wide\">Asp.Net</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\n    </div>\n    <p class=\"w3-wide\">Asp.Net Web Api</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\n    </div>\n    <p class=\"w3-wide\">Asp.Net Core</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:70%\"></div>\n    </div>\n    <p class=\"w3-wide\">JQuery</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\n    </div>\n    <p class=\"w3-wide\">Angular 4</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:75%\"></div>\n    </div>\n    <p class=\"w3-wide\">CSS</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\n    </div>\n    <p class=\"w3-wide\">SQL</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\n    </div>\n    <p class=\"w3-wide\">LINQ</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:75%\"></div>\n    </div>\n    <p class=\"w3-wide\">Entity Framework</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:70%\"></div>\n    </div>    \n    <br>\n    \n    <!-- <div class=\"w3-row w3-center w3-padding-16 w3-section w3-light-grey\">\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">11+</span><br>\n        Partners\n      </div>\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">55+</span><br>\n        Projects Done\n      </div>\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">89+</span><br>\n        Happy Clients\n      </div>\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">150+</span><br>\n        Meetings\n      </div>\n    </div> -->\n<app-pdf-downloader></app-pdf-downloader>\n    <!-- <button class=\"w3-button w3-light-grey w3-padding-large w3-section\">\n      <i class=\"fa fa-download\"></i> Download Resume\n       <span class=\"fa fa-download\" *ngIf=\"!pending\"></span>\n            <span class=\"fa fa-refresh fa-spin\" *ngIf=\"pending\"></span>\n    </button> -->\n    \n    <!-- Grid for pricing tables -->\n    <!-- <h3 class=\"w3-padding-16 w3-text-light-grey\">My Price</h3>\n    <div class=\"w3-row-padding\" style=\"margin:0 -16px\">\n      <div class=\"w3-half w3-margin-bottom\">\n        <ul class=\"w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off\">\n          <li class=\"w3-dark-grey w3-xlarge w3-padding-32\">Basic</li>\n          <li class=\"w3-padding-16\">Web Design</li>\n          <li class=\"w3-padding-16\">Photography</li>\n          <li class=\"w3-padding-16\">5GB Storage</li>\n          <li class=\"w3-padding-16\">Mail Support</li>\n          <li class=\"w3-padding-16\">\n            <h2>$ 10</h2>\n            <span class=\"w3-opacity\">per month</span>\n          </li>\n          <li class=\"w3-light-grey w3-padding-24\">\n            <button class=\"w3-button w3-white w3-padding-large w3-hover-black\">Sign Up</button>\n          </li>\n        </ul>\n      </div>\n\n      <div class=\"w3-half\">\n        <ul class=\"w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off\">\n          <li class=\"w3-dark-grey w3-xlarge w3-padding-32\">Pro</li>\n          <li class=\"w3-padding-16\">Web Design</li>\n          <li class=\"w3-padding-16\">Photography</li>\n          <li class=\"w3-padding-16\">50GB Storage</li>\n          <li class=\"w3-padding-16\">Endless Support</li>\n          <li class=\"w3-padding-16\">\n            <h2>$ 25</h2>\n            <span class=\"w3-opacity\">per month</span>\n          </li>\n          <li class=\"w3-light-grey w3-padding-24\">\n            <button class=\"w3-button w3-white w3-padding-large w3-hover-black\">Sign Up</button>\n          </li>\n        </ul>\n      </div>    \n    </div> -->\n    <!-- End Grid/Pricing tables -->\n    \n    <!-- Testimonials -->\n    <!-- <h3 class=\"w3-padding-24 w3-text-light-grey\">My Reputation</h3>  \n    <img src=\"/w3images/bandmember.jpg\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:80px\">\n    <p><span class=\"w3-large w3-margin-right\">Chris Fox.</span> CEO at Mighty Schools.</p>\n    <p>Jane Doe saved us from a web disaster.</p><br>\n    \n    <img src=\"/w3images/avatar_g2.jpg\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:80px\">\n    <p><span class=\"w3-large w3-margin-right\">Rebecca Flex.</span> CEO at Company.</p>\n    <p>No one is better than Jane Doe.</p> -->\n  <!-- End About Section -->\n  </div>\n\n  "
 
 /***/ }),
 
@@ -170,12 +170,14 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__ = __webpack_require__("./src/app/projects/projects.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_navigation_component__ = __webpack_require__("./src/app/navigation/navigation.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__footer_footer_component__ = __webpack_require__("./src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pdf_downloader_pdf_downloader_component__ = __webpack_require__("./src/app/pdf-downloader/pdf-downloader.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -209,7 +211,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */],
             __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__["a" /* ProjectsComponent */],
             __WEBPACK_IMPORTED_MODULE_10__navigation_navigation_component__["a" /* NavigationComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__footer_footer_component__["a" /* FooterComponent */]
+            __WEBPACK_IMPORTED_MODULE_11__footer_footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__pdf_downloader_pdf_downloader_component__["a" /* PdfDownloaderComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -468,6 +471,100 @@ NavigationComponent = __decorate([
 ], NavigationComponent);
 
 //# sourceMappingURL=navigation.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/pdf-downloader/pdf-downloader.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "./src/app/pdf-downloader/pdf-downloader.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<button class=\"w3-button w3-light-grey w3-padding-large w3-section\" (click)=\"download()\">\n      <!-- <i class=\"fa fa-download\"></i>--> Download Resume \n       <span class=\"fa fa-download\" *ngIf=\"!pending\"></span>\n            <span class=\"fa fa-refresh fa-spin\" *ngIf=\"pending\"></span>\n    </button>"
+
+/***/ }),
+
+/***/ "./src/app/pdf-downloader/pdf-downloader.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PdfDownloaderComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_file_saver__ = __webpack_require__("./node_modules/file-saver/FileSaver.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_file_saver___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_file_saver__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+//let fileSaver = require('filesaver.js');
+var PdfDownloaderComponent = (function () {
+    function PdfDownloaderComponent() {
+        this.pending = false;
+    }
+    PdfDownloaderComponent.prototype.ngOnInit = function () {
+    };
+    PdfDownloaderComponent.prototype.download = function () {
+        // Xhr creates new context so we need to create reference to this
+        var self = this;
+        // Status flag used in the template.
+        this.pending = true;
+        // Create the Xhr request object
+        var xhr = new XMLHttpRequest();
+        var url = 'api/hello/ResumeDownload'; //`/api/pdf/iticket/${this.no}?lang=en`;
+        xhr.open('GET', url, true);
+        xhr.responseType = 'blob';
+        // Xhr callback when we get a result back
+        // We are not using arrow function because we need the 'this' context
+        xhr.onreadystatechange = function () {
+            // We use setTimeout to trigger change detection in Zones
+            setTimeout(function () { self.pending = false; }, 0);
+            // If we get an HTTP status OK (200), save the file using fileSaver
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var blob = new Blob([this.response], { type: 'application/pdf' });
+                __WEBPACK_IMPORTED_MODULE_1_file_saver__["saveAs"](blob, 'SenthilKumar_CV.pdf');
+            }
+        };
+        // Start the Ajax request
+        xhr.send();
+    };
+    return PdfDownloaderComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    __metadata("design:type", Object)
+], PdfDownloaderComponent.prototype, "no", void 0);
+PdfDownloaderComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-pdf-downloader',
+        template: __webpack_require__("./src/app/pdf-downloader/pdf-downloader.component.html"),
+        styles: [__webpack_require__("./src/app/pdf-downloader/pdf-downloader.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], PdfDownloaderComponent);
+
+//# sourceMappingURL=pdf-downloader.component.js.map
 
 /***/ }),
 
