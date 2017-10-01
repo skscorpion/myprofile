@@ -28,5 +28,15 @@ namespace MyProfile.Controllers
                     return File(System.IO.File.OpenRead(@"src\assets\files\Senthil_MVC.pdf"), contentType: "application/pdf"); 
                 }
             }
+             	[HttpGet]
+            [Route("TestDoc")]
+            public IActionResult TestFile()
+            {
+                //using (var stream = new FileStream(@"src\assets\files\Senthil_MVC.pdf", FileMode.Open))
+                {
+                    //return new FileStreamResult(stream, "application/pdf");
+                    return File(System.IO.File.OpenRead(@"src\assets\files\TestDoc.docx"), contentType: "application/pdf"); 
+                }
+            }
     }
 }

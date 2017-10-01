@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<!-- About Section -->\n  <div class=\"w3-content w3-justify w3-text-grey w3-padding-64\" id=\"about\">\n    <h2 class=\"w3-text-light-grey\">Senthil Kumar</h2>\n    <hr style=\"width:200px\" class=\"w3-opacity\">\n    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\n      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur\n      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n    </p>\n    <h3 class=\"w3-padding-16 w3-text-light-grey\">My Skills</h3>\n    <p class=\"w3-wide\">MVC</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:90%\"></div>\n    </div>\n    <p class=\"w3-wide\">C#</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\n    </div>\n    <p class=\"w3-wide\">Asp.Net</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\n    </div>\n    <p class=\"w3-wide\">Asp.Net Web Api</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\n    </div>\n    <p class=\"w3-wide\">Asp.Net Core</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:70%\"></div>\n    </div>\n    <p class=\"w3-wide\">JQuery</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\n    </div>\n    <p class=\"w3-wide\">Angular 4</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:75%\"></div>\n    </div>\n    <p class=\"w3-wide\">CSS</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\n    </div>\n    <p class=\"w3-wide\">SQL</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\n    </div>\n    <p class=\"w3-wide\">LINQ</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:75%\"></div>\n    </div>\n    <p class=\"w3-wide\">Entity Framework</p>\n    <div class=\"w3-white\">\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:70%\"></div>\n    </div>    \n    <br>\n    \n    <!-- <div class=\"w3-row w3-center w3-padding-16 w3-section w3-light-grey\">\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">11+</span><br>\n        Partners\n      </div>\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">55+</span><br>\n        Projects Done\n      </div>\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">89+</span><br>\n        Happy Clients\n      </div>\n      <div class=\"w3-quarter w3-section\">\n        <span class=\"w3-xlarge\">150+</span><br>\n        Meetings\n      </div>\n    </div> -->\n<app-pdf-downloader></app-pdf-downloader>\n    <!-- <button class=\"w3-button w3-light-grey w3-padding-large w3-section\">\n      <i class=\"fa fa-download\"></i> Download Resume\n       <span class=\"fa fa-download\" *ngIf=\"!pending\"></span>\n            <span class=\"fa fa-refresh fa-spin\" *ngIf=\"pending\"></span>\n    </button> -->\n    \n    <!-- Grid for pricing tables -->\n    <!-- <h3 class=\"w3-padding-16 w3-text-light-grey\">My Price</h3>\n    <div class=\"w3-row-padding\" style=\"margin:0 -16px\">\n      <div class=\"w3-half w3-margin-bottom\">\n        <ul class=\"w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off\">\n          <li class=\"w3-dark-grey w3-xlarge w3-padding-32\">Basic</li>\n          <li class=\"w3-padding-16\">Web Design</li>\n          <li class=\"w3-padding-16\">Photography</li>\n          <li class=\"w3-padding-16\">5GB Storage</li>\n          <li class=\"w3-padding-16\">Mail Support</li>\n          <li class=\"w3-padding-16\">\n            <h2>$ 10</h2>\n            <span class=\"w3-opacity\">per month</span>\n          </li>\n          <li class=\"w3-light-grey w3-padding-24\">\n            <button class=\"w3-button w3-white w3-padding-large w3-hover-black\">Sign Up</button>\n          </li>\n        </ul>\n      </div>\n\n      <div class=\"w3-half\">\n        <ul class=\"w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off\">\n          <li class=\"w3-dark-grey w3-xlarge w3-padding-32\">Pro</li>\n          <li class=\"w3-padding-16\">Web Design</li>\n          <li class=\"w3-padding-16\">Photography</li>\n          <li class=\"w3-padding-16\">50GB Storage</li>\n          <li class=\"w3-padding-16\">Endless Support</li>\n          <li class=\"w3-padding-16\">\n            <h2>$ 25</h2>\n            <span class=\"w3-opacity\">per month</span>\n          </li>\n          <li class=\"w3-light-grey w3-padding-24\">\n            <button class=\"w3-button w3-white w3-padding-large w3-hover-black\">Sign Up</button>\n          </li>\n        </ul>\n      </div>    \n    </div> -->\n    <!-- End Grid/Pricing tables -->\n    \n    <!-- Testimonials -->\n    <!-- <h3 class=\"w3-padding-24 w3-text-light-grey\">My Reputation</h3>  \n    <img src=\"/w3images/bandmember.jpg\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:80px\">\n    <p><span class=\"w3-large w3-margin-right\">Chris Fox.</span> CEO at Mighty Schools.</p>\n    <p>Jane Doe saved us from a web disaster.</p><br>\n    \n    <img src=\"/w3images/avatar_g2.jpg\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:80px\">\n    <p><span class=\"w3-large w3-margin-right\">Rebecca Flex.</span> CEO at Company.</p>\n    <p>No one is better than Jane Doe.</p> -->\n  <!-- End About Section -->\n  </div>\n\n  "
+module.exports = "\r\n\r\n<!-- About Section -->\r\n  <div class=\"w3-content w3-justify w3-text-grey w3-padding-64\" id=\"about\">\r\n    <h2 class=\"w3-text-light-grey\">Senthil Kumar</h2>\r\n    <hr style=\"width:200px\" class=\"w3-opacity\">\r\n    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\n      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur\r\n      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\r\n    </p>\r\n    <h3 class=\"w3-padding-16 w3-text-light-grey\">My Skills</h3>\r\n    <div *ngFor=\"let skill of skills\">\r\n      <p class=\"w3-wide\">{{skill.Technology}}</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;\" [style.width]=\"skill.Level\"></div>\r\n    </div>\r\n    </div>\r\n    <!-- <p class=\"w3-wide\">MVC</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:90%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">C#</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">Asp.Net</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">Asp.Net Web Api</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">Asp.Net Core</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:70%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">JQuery</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">Angular 4</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:75%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">CSS</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:85%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">SQL</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:80%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">LINQ</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:75%\"></div>\r\n    </div>\r\n    <p class=\"w3-wide\">Entity Framework</p>\r\n    <div class=\"w3-white\">\r\n      <div class=\"w3-dark-grey\" style=\"height:28px;width:70%\"></div>\r\n    </div>     -->\r\n    <br>\r\n    \r\n    <!-- <div class=\"w3-row w3-center w3-padding-16 w3-section w3-light-grey\">\r\n      <div class=\"w3-quarter w3-section\">\r\n        <span class=\"w3-xlarge\">11+</span><br>\r\n        Partners\r\n      </div>\r\n      <div class=\"w3-quarter w3-section\">\r\n        <span class=\"w3-xlarge\">55+</span><br>\r\n        Projects Done\r\n      </div>\r\n      <div class=\"w3-quarter w3-section\">\r\n        <span class=\"w3-xlarge\">89+</span><br>\r\n        Happy Clients\r\n      </div>\r\n      <div class=\"w3-quarter w3-section\">\r\n        <span class=\"w3-xlarge\">150+</span><br>\r\n        Meetings\r\n      </div>\r\n    </div> -->\r\n<app-pdf-downloader></app-pdf-downloader>\r\n    <!-- <button class=\"w3-button w3-light-grey w3-padding-large w3-section\">\r\n      <i class=\"fa fa-download\"></i> Download Resume\r\n       <span class=\"fa fa-download\" *ngIf=\"!pending\"></span>\r\n            <span class=\"fa fa-refresh fa-spin\" *ngIf=\"pending\"></span>\r\n    </button> -->\r\n    \r\n    <!-- Grid for pricing tables -->\r\n    <!-- <h3 class=\"w3-padding-16 w3-text-light-grey\">My Price</h3>\r\n    <div class=\"w3-row-padding\" style=\"margin:0 -16px\">\r\n      <div class=\"w3-half w3-margin-bottom\">\r\n        <ul class=\"w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off\">\r\n          <li class=\"w3-dark-grey w3-xlarge w3-padding-32\">Basic</li>\r\n          <li class=\"w3-padding-16\">Web Design</li>\r\n          <li class=\"w3-padding-16\">Photography</li>\r\n          <li class=\"w3-padding-16\">5GB Storage</li>\r\n          <li class=\"w3-padding-16\">Mail Support</li>\r\n          <li class=\"w3-padding-16\">\r\n            <h2>$ 10</h2>\r\n            <span class=\"w3-opacity\">per month</span>\r\n          </li>\r\n          <li class=\"w3-light-grey w3-padding-24\">\r\n            <button class=\"w3-button w3-white w3-padding-large w3-hover-black\">Sign Up</button>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n\r\n      <div class=\"w3-half\">\r\n        <ul class=\"w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off\">\r\n          <li class=\"w3-dark-grey w3-xlarge w3-padding-32\">Pro</li>\r\n          <li class=\"w3-padding-16\">Web Design</li>\r\n          <li class=\"w3-padding-16\">Photography</li>\r\n          <li class=\"w3-padding-16\">50GB Storage</li>\r\n          <li class=\"w3-padding-16\">Endless Support</li>\r\n          <li class=\"w3-padding-16\">\r\n            <h2>$ 25</h2>\r\n            <span class=\"w3-opacity\">per month</span>\r\n          </li>\r\n          <li class=\"w3-light-grey w3-padding-24\">\r\n            <button class=\"w3-button w3-white w3-padding-large w3-hover-black\">Sign Up</button>\r\n          </li>\r\n        </ul>\r\n      </div>    \r\n    </div> -->\r\n    <!-- End Grid/Pricing tables -->\r\n    \r\n    <!-- Testimonials -->\r\n    <!-- <h3 class=\"w3-padding-24 w3-text-light-grey\">My Reputation</h3>  \r\n    <img src=\"/w3images/bandmember.jpg\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:80px\">\r\n    <p><span class=\"w3-large w3-margin-right\">Chris Fox.</span> CEO at Mighty Schools.</p>\r\n    <p>Jane Doe saved us from a web disaster.</p><br>\r\n    \r\n    <img src=\"/w3images/avatar_g2.jpg\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:80px\">\r\n    <p><span class=\"w3-large w3-margin-right\">Rebecca Flex.</span> CEO at Company.</p>\r\n    <p>No one is better than Jane Doe.</p> -->\r\n  <!-- End About Section -->\r\n  </div>\r\n\r\n  "
 
 /***/ }),
 
@@ -62,11 +62,24 @@ var AboutComponent = (function () {
     function AboutComponent() {
     }
     AboutComponent.prototype.ngOnInit = function () {
+        this.skills = [
+            { Technology: "MVC", Level: "90%" },
+            { Technology: "C#", Level: "85%" },
+            { Technology: "Asp.Net", Level: "80%" },
+            { Technology: "Asp.Net Web Api", Level: "80% " },
+            { Technology: "Asp.Net Core", Level: "70%" },
+            { Technology: "JQuery", Level: "85%" },
+            { Technology: "Angular 4", Level: "75%" },
+            { Technology: "CSS", Level: "85%" },
+            { Technology: "SQL", Level: "80%" },
+            { Technology: "LINQ", Level: "75%" },
+            { Technology: "Entity Framework", Level: "70%" },
+        ];
     };
     return AboutComponent;
 }());
 AboutComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-about',
         template: __webpack_require__("./src/app/about/about.component.html"),
         styles: [__webpack_require__("./src/app/about/about.component.css")]
@@ -74,6 +87,11 @@ AboutComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], AboutComponent);
 
+var Skills = (function () {
+    function Skills() {
+    }
+    return Skills;
+}());
 //# sourceMappingURL=about.component.js.map
 
 /***/ }),
@@ -139,7 +157,7 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
         template: __webpack_require__("./src/app/app.component.html"),
         //template: '<router-outlet></router-outlet>',
@@ -171,12 +189,19 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navigation_navigation_component__ = __webpack_require__("./src/app/navigation/navigation.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__footer_footer_component__ = __webpack_require__("./src/app/footer/footer.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pdf_downloader_pdf_downloader_component__ = __webpack_require__("./src/app/pdf-downloader/pdf-downloader.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ng2_bootstrap_modal__ = __webpack_require__("./node_modules/ng2-bootstrap-modal/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ng2_bootstrap_modal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_ng2_bootstrap_modal__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__modal_popup_modal_popup_component__ = __webpack_require__("./src/app/modal-popup/modal-popup.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/@angular/forms.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -203,7 +228,7 @@ var AppModule = (function () {
     return AppModule;
 }());
 AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* NgModule */])({
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_6__contact_contact_component__["a" /* ContactComponent */],
@@ -212,15 +237,22 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__["a" /* ProjectsComponent */],
             __WEBPACK_IMPORTED_MODULE_10__navigation_navigation_component__["a" /* NavigationComponent */],
             __WEBPACK_IMPORTED_MODULE_11__footer_footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__pdf_downloader_pdf_downloader_component__["a" /* PdfDownloaderComponent */]
+            __WEBPACK_IMPORTED_MODULE_12__pdf_downloader_pdf_downloader_component__["a" /* PdfDownloaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__modal_popup_modal_popup_component__["a" /* ModalPopupComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_15__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_15__angular_forms__["b" /* ReactiveFormsModule */],
+            __WEBPACK_IMPORTED_MODULE_13_ng2_bootstrap_modal__["BootstrapModalModule"].forRoot({ container: document.body }),
             __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only 
             )
         ],
         providers: [__WEBPACK_IMPORTED_MODULE_5__service_app_service__["a" /* AppService */]],
+        entryComponents: [
+            __WEBPACK_IMPORTED_MODULE_14__modal_popup_modal_popup_component__["a" /* ModalPopupComponent */]
+        ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -278,7 +310,7 @@ var ContactComponent = (function () {
     return ContactComponent;
 }());
 ContactComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-contact',
         template: __webpack_require__("./src/app/contact/contact.component.html"),
         styles: [__webpack_require__("./src/app/contact/contact.component.css")]
@@ -339,7 +371,7 @@ var FooterComponent = (function () {
     return FooterComponent;
 }());
 FooterComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-footer',
         template: __webpack_require__("./src/app/footer/footer.component.html"),
         styles: [__webpack_require__("./src/app/footer/footer.component.css")]
@@ -401,7 +433,7 @@ var HomeComponent = (function () {
     return HomeComponent;
 }());
 HomeComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-home',
         template: __webpack_require__("./src/app/home/home.component.html"),
         styles: [__webpack_require__("./src/app/home/home.component.css")]
@@ -410,6 +442,98 @@ HomeComponent = __decorate([
 ], HomeComponent);
 
 //# sourceMappingURL=home.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/modal-popup/modal-popup.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "./src/app/modal-popup/modal-popup.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "                  <div class=\"modal-content\">\n                   <div class=\"modal-header\">\n                     <button type=\"button\" class=\"close\" (click)=\"close()\" >&times;</button>\n                     <h4 class=\"modal-title\">{{title || 'Confirm'}}</h4>\n                   </div>\n                    <div class=\"modal-body\">\n                      \n                    <label>{{message}} </label><input [(ngModel)]=\"accesscode\" class=\"form-control\" #code=\"ngModel\" required name=\"accesscode\" type=\"text\" placeholder=\"Enter your access code here\">\n                  <label style=\"color:red\">{{errormsg}} </label> \n                      \n                  </div>\n                   <div class=\"modal-footer\">\n                     <button type=\"button\" class=\"btn btn-primary\" (click)=\"confirm()\" [disabled]=\"code.invalid \">OK</button>\n                     <button type=\"button\" class=\"btn btn-default\" (click)=\"close()\" >Cancel</button>\n                   </div>\n                 </div>"
+
+/***/ }),
+
+/***/ "./src/app/modal-popup/modal-popup.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalPopupComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap_modal__ = __webpack_require__("./node_modules/ng2-bootstrap-modal/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap_modal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap_modal__);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ModalPopupComponent = (function (_super) {
+    __extends(ModalPopupComponent, _super);
+    function ModalPopupComponent(dialogService) {
+        return _super.call(this, dialogService) || this;
+    }
+    ModalPopupComponent.prototype.ngOnInit = function () {
+    };
+    ModalPopupComponent.prototype.confirm = function () {
+        // we set dialog result as true on click on confirm button, 
+        // then we can get dialog result from caller code 
+        if (this.accesscode === "MyCode") {
+            this.result = true;
+            this.close();
+        }
+        else if (this.accesscode === "test") {
+            this.result = false;
+            this.close();
+        }
+        else {
+            this.errormsg = "Invalid code entered.";
+        }
+    };
+    return ModalPopupComponent;
+}(__WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap_modal__["DialogComponent"]));
+ModalPopupComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'confirm',
+        template: __webpack_require__("./src/app/modal-popup/modal-popup.component.html"),
+        styles: [__webpack_require__("./src/app/modal-popup/modal-popup.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap_modal__["DialogService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap_modal__["DialogService"]) === "function" && _a || Object])
+], ModalPopupComponent);
+
+var _a;
+//# sourceMappingURL=modal-popup.component.js.map
 
 /***/ }),
 
@@ -462,7 +586,7 @@ var NavigationComponent = (function () {
     return NavigationComponent;
 }());
 NavigationComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-navigation',
         template: __webpack_require__("./src/app/navigation/navigation.component.html"),
         styles: [__webpack_require__("./src/app/navigation/navigation.component.css")]
@@ -495,7 +619,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/pdf-downloader/pdf-downloader.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<button class=\"w3-button w3-light-grey w3-padding-large w3-section\" (click)=\"download()\">\n      <!-- <i class=\"fa fa-download\"></i>--> Download Resume \n       <span class=\"fa fa-download\" *ngIf=\"!pending\"></span>\n            <span class=\"fa fa-refresh fa-spin\" *ngIf=\"pending\"></span>\n    </button>"
+module.exports = "<button class=\"w3-button w3-light-grey w3-padding-large w3-section\" (click)=\"confirmAccessCode()\">\n      <!-- <i class=\"fa fa-download\"></i>--> Download Resume \n       <span class=\"fa fa-download\" *ngIf=\"!pending\"></span>\n            <span class=\"fa fa-refresh fa-spin\" *ngIf=\"pending\"></span>\n    </button>\n     "
 
 /***/ }),
 
@@ -507,6 +631,9 @@ module.exports = "<button class=\"w3-button w3-light-grey w3-padding-large w3-se
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_file_saver__ = __webpack_require__("./node_modules/file-saver/FileSaver.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_file_saver___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_file_saver__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_popup_modal_popup_component__ = __webpack_require__("./src/app/modal-popup/modal-popup.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap_modal__ = __webpack_require__("./node_modules/ng2-bootstrap-modal/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap_modal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap_modal__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -519,20 +646,48 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 //let fileSaver = require('filesaver.js');
+
+
 var PdfDownloaderComponent = (function () {
-    function PdfDownloaderComponent() {
+    function PdfDownloaderComponent(dialogService) {
+        this.dialogService = dialogService;
         this.pending = false;
     }
     PdfDownloaderComponent.prototype.ngOnInit = function () {
     };
-    PdfDownloaderComponent.prototype.download = function () {
+    PdfDownloaderComponent.prototype.confirmAccessCode = function () {
+        var _this = this;
+        var disposable = this.dialogService.addDialog(__WEBPACK_IMPORTED_MODULE_2__modal_popup_modal_popup_component__["a" /* ModalPopupComponent */], {
+            title: 'Authorize',
+            message: 'Please enter your access code'
+        })
+            .subscribe(function (isConfirmed) {
+            alert(isConfirmed);
+            //We get dialog result
+            if (isConfirmed != null && isConfirmed != undefined) {
+                _this.download(isConfirmed);
+            }
+        });
+        //We can close dialog calling disposable.unsubscribe();
+        //If dialog was not closed manually close it by timeout
+        // setTimeout(()=>{
+        //     disposable.unsubscribe();
+        // },10000);
+    };
+    PdfDownloaderComponent.prototype.download = function (resume) {
         // Xhr creates new context so we need to create reference to this
         var self = this;
         // Status flag used in the template.
         this.pending = true;
         // Create the Xhr request object
         var xhr = new XMLHttpRequest();
-        var url = 'api/hello/ResumeDownload'; //`/api/pdf/iticket/${this.no}?lang=en`;
+        var url;
+        alert(resume);
+        if (resume)
+            url = 'api/hello/ResumeDownload'; //`/api/pdf/iticket/${this.no}?lang=en`;
+        else
+            url = 'api/hello/TestDoc';
+        alert(url);
         xhr.open('GET', url, true);
         xhr.responseType = 'blob';
         // Xhr callback when we get a result back
@@ -552,18 +707,19 @@ var PdfDownloaderComponent = (function () {
     return PdfDownloaderComponent;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
     __metadata("design:type", Object)
 ], PdfDownloaderComponent.prototype, "no", void 0);
 PdfDownloaderComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-pdf-downloader',
         template: __webpack_require__("./src/app/pdf-downloader/pdf-downloader.component.html"),
         styles: [__webpack_require__("./src/app/pdf-downloader/pdf-downloader.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap_modal__["DialogService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap_modal__["DialogService"]) === "function" && _a || Object])
 ], PdfDownloaderComponent);
 
+var _a;
 //# sourceMappingURL=pdf-downloader.component.js.map
 
 /***/ }),
@@ -617,7 +773,7 @@ var ProjectsComponent = (function () {
     return ProjectsComponent;
 }());
 ProjectsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-projects',
         template: __webpack_require__("./src/app/projects/projects.component.html"),
         styles: [__webpack_require__("./src/app/projects/projects.component.css")]
@@ -660,7 +816,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_23" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
@@ -709,7 +865,7 @@ var AppService = (function () {
     return AppService;
 }());
 AppService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
 ], AppService);
 

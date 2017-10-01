@@ -11,7 +11,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { PdfDownloaderComponent } from './pdf-downloader/pdf-downloader.component';
-
+import { BootstrapModalModule } from 'ng2-bootstrap-modal';
+import { ModalPopupComponent } from './modal-popup/modal-popup.component';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 
 const appRoutes: Routes = [
    { path: '', redirectTo: 'home', pathMatch:'full' }, 
@@ -29,17 +31,24 @@ const appRoutes: Routes = [
     ProjectsComponent,
     NavigationComponent,
     FooterComponent,
-    PdfDownloaderComponent
+    PdfDownloaderComponent,
+    ModalPopupComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BootstrapModalModule.forRoot({container:document.body}),
       RouterModule.forRoot(
             appRoutes,
             { enableTracing: true } // <-- debugging purposes only 
         ) 
   ],
   providers: [AppService],
+  entryComponents: [
+        ModalPopupComponent
+      ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

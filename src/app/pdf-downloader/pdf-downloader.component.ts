@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { BrowserXhr } from '@angular/http';
 import * as fileSaver from 'file-saver';
 //let fileSaver = require('filesaver.js');
+import { ModalPopupComponent } from '../modal-popup/modal-popup.component';
+ import { DialogService } from "ng2-bootstrap-modal";
 
 @Component({
   selector: 'app-pdf-downloader',
@@ -13,11 +15,27 @@ export class PdfDownloaderComponent implements OnInit {
 
   public pending: boolean = false;
 
-  constructor() { }
+  constructor(private dialogService:DialogService) { }
   ngOnInit() {
   }
+  public confirmAccessCode() {
+            let disposable = this.dialogService.addDialog(ModalPopupComponent, {
+                title:'Authorize', 
+                message:'Please enter your access code'})
+                .subscribe((isConfirmed)=>{                  
+                    //We get dialog result
+                    if(isConfirmed != null && isConfirmed != undefined) {
+                       this.download(isConfirmed);
+                    }
+                });
+            //We can close dialog calling disposable.unsubscribe();
+            //If dialog was not closed manually close it by timeout
+            // setTimeout(()=>{
+            //     disposable.unsubscribe();
+            // },10000);
+        }
 
-  public download() {
+  private download(resume:boolean) {
     // Xhr creates new context so we need to create reference to this
     let self = this;
 
@@ -26,7 +44,13 @@ export class PdfDownloaderComponent implements OnInit {
 
     // Create the Xhr request object
     let xhr = new XMLHttpRequest();
-    let url = 'api/hello/ResumeDownload';//`/api/pdf/iticket/${this.no}?lang=en`;
+    let url:string;
+    
+    if(resume)
+    url = 'api/hello/ResumeDownload';//`/api/pdf/iticket/${this.no}?lang=en`;
+    else
+    url = 'api/hello/TestDoc';
+    
     xhr.open('GET', url, true);
     xhr.responseType = 'blob';
 
