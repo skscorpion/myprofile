@@ -10,14 +10,37 @@
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: senthilkmaar@gmail.com</p>
     </div><br>
     <p>Lets get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><textarea rows="4" cols="50" class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></textarea></p>
+    
+    <form (ngSubmit) = "submit()" #contactForm="ngForm">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required [(ngModel)]="contactObj.Name" name="Name" maxlength="100" #contactname="ngModel"></p>
+      <div class="alert alert-danger error" [hidden]="contactname.valid || contactname.untouched">
+        <div  *ngIf="contactname.errors && contactname.errors.required">
+            Name is required
+        </div>
+      </div>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required [(ngModel)]="contactObj.Email" name="Email" maxlength="200" #contactemail="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"></p>
+      <div class="alert alert-danger error" [hidden]="contactemail.valid || contactemail.untouched">
+        <div  *ngIf="contactemail.errors && contactemail.errors.required">
+            Email is required
+        </div>
+        <div  *ngIf="contactemail.errors && contactemail.errors.pattern">
+            Email is invalid
+        </div>
+      </div>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required [(ngModel)]="contactObj.Subject" name="Subject" maxlength="200" #contactsubject="ngModel"></p>
+      <div class="alert alert-danger error" [hidden]="contactsubject.valid || contactsubject.untouched">
+        <div  *ngIf="contactsubject.errors && contactsubject.errors.required">
+            Subject is required
+        </div>
+      </div>
+      <p><textarea rows="4" class="w3-input w3-padding-16" type="text" placeholder="Message" required [(ngModel)]="contactObj.Message" name="Message" maxlength="2000" #contactmsg="ngModel"></textarea></p>
+      <div class="alert alert-danger error" [hidden]="contactmsg.valid || contactmsg.untouched">
+        <div  *ngIf="contactmsg.errors && contactmsg.errors.required">
+            Message is required
+        </div>
+      </div>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit" [disabled]="!contactForm.form.valid">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>

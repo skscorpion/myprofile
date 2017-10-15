@@ -21,7 +21,7 @@ export class PdfDownloaderComponent implements OnInit {
   public confirmAccessCode() {
             let disposable = this.dialogService.addDialog(ModalPopupComponent, {
                 title:'Authorize', 
-                message:'Please enter your access code'})
+                message:'Please enter your access code'},{closeByClickingOutside:true})
                 .subscribe((isConfirmed)=>{                  
                     //We get dialog result
                     if(isConfirmed != null && isConfirmed != undefined) {

@@ -16,11 +16,13 @@ import { ModalPopupComponent } from './modal-popup/modal-popup.component';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 
 const appRoutes: Routes = [
+  
    { path: '', redirectTo: 'home', pathMatch:'full' }, 
     { path: 'home', component: HomeComponent }, 
     { path: 'about', component: AboutComponent },
     { path: 'projects', component: ProjectsComponent },
-    { path: 'contact', component: ContactComponent }
+    { path: 'contact', component: ContactComponent },
+    { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 @NgModule({
   declarations: [

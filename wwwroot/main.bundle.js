@@ -220,7 +220,8 @@ var appRoutes = [
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */] },
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_7__about_about_component__["a" /* AboutComponent */] },
     { path: 'projects', component: __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__["a" /* ProjectsComponent */] },
-    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_6__contact_contact_component__["a" /* ContactComponent */] }
+    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_6__contact_contact_component__["a" /* ContactComponent */] },
+    { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -282,7 +283,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n  <!-- Contact Section -->\n  <div class=\"w3-padding-64 w3-content w3-text-grey\" id=\"contact\">\n    <h2 class=\"w3-text-light-grey\">Contact Me</h2>\n    <hr style=\"width:200px\" class=\"w3-opacity\">\n\n    <div class=\"w3-section\">\n      <p><i class=\"fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right\"></i> Chennai, India</p>\n      <p><i class=\"fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right\"></i> Phone: +91 98412 17272</p>\n      <p><i class=\"fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right\"> </i> Email: senthilkmaar@gmail.com</p>\n    </div><br>\n    <p>Lets get in touch. Send me a message:</p>\n\n    <form action=\"/action_page.php\" target=\"_blank\">\n      <p><input class=\"w3-input w3-padding-16\" type=\"text\" placeholder=\"Name\" required name=\"Name\"></p>\n      <p><input class=\"w3-input w3-padding-16\" type=\"text\" placeholder=\"Email\" required name=\"Email\"></p>\n      <p><input class=\"w3-input w3-padding-16\" type=\"text\" placeholder=\"Subject\" required name=\"Subject\"></p>\n      <p><textarea rows=\"4\" cols=\"50\" class=\"w3-input w3-padding-16\" type=\"text\" placeholder=\"Message\" required name=\"Message\"></textarea></p>\n      <p>\n        <button class=\"w3-button w3-light-grey w3-padding-large\" type=\"submit\">\n          <i class=\"fa fa-paper-plane\"></i> SEND MESSAGE\n        </button>\n      </p>\n    </form>\n  <!-- End Contact Section -->\n  </div>\n"
+module.exports = "\r\n  <!-- Contact Section -->\r\n  <div class=\"w3-padding-64 w3-content w3-text-grey\" id=\"contact\">\r\n    <h2 class=\"w3-text-light-grey\">Contact Me</h2>\r\n    <hr style=\"width:200px\" class=\"w3-opacity\">\r\n\r\n    <div class=\"w3-section\">\r\n      <p><i class=\"fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right\"></i> Chennai, India</p>\r\n      <p><i class=\"fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right\"></i> Phone: +91 98412 17272</p>\r\n      <p><i class=\"fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right\"> </i> Email: senthilkmaar@gmail.com</p>\r\n    </div><br>\r\n    <p>Lets get in touch. Send me a message:</p>\r\n    \r\n    <form (ngSubmit) = \"submit()\" #contactForm=\"ngForm\">\r\n      <p><input class=\"w3-input w3-padding-16\" type=\"text\" placeholder=\"Name\" required [(ngModel)]=\"contactObj.Name\" name=\"Name\" maxlength=\"100\" #contactname=\"ngModel\"></p>\r\n      <div class=\"alert alert-danger error\" [hidden]=\"contactname.valid || contactname.untouched\">\r\n        <div  *ngIf=\"contactname.errors && contactname.errors.required\">\r\n            Name is required\r\n        </div>\r\n      </div>\r\n      <p><input class=\"w3-input w3-padding-16\" type=\"text\" placeholder=\"Email\" required [(ngModel)]=\"contactObj.Email\" name=\"Email\" maxlength=\"200\" #contactemail=\"ngModel\" pattern=\"^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$\"></p>\r\n      <div class=\"alert alert-danger error\" [hidden]=\"contactemail.valid || contactemail.untouched\">\r\n        <div  *ngIf=\"contactemail.errors && contactemail.errors.required\">\r\n            Email is required\r\n        </div>\r\n        <div  *ngIf=\"contactemail.errors && contactemail.errors.pattern\">\r\n            Email is invalid\r\n        </div>\r\n      </div>\r\n      <p><input class=\"w3-input w3-padding-16\" type=\"text\" placeholder=\"Subject\" required [(ngModel)]=\"contactObj.Subject\" name=\"Subject\" maxlength=\"200\" #contactsubject=\"ngModel\"></p>\r\n      <div class=\"alert alert-danger\" [hidden]=\"contactsubject.valid || contactsubject.untouched\">\r\n        <div  *ngIf=\"contactsubject.errors && contactsubject.errors.required\">\r\n            Subject is required\r\n        </div>\r\n      </div>\r\n      <p><textarea rows=\"4\" class=\"w3-input w3-padding-16\" type=\"text\" placeholder=\"Message\" required [(ngModel)]=\"contactObj.Message\" name=\"Message\" maxlength=\"2000\" #contactmsg=\"ngModel\"></textarea></p>\r\n      <div class=\"alert alert-danger\" [hidden]=\"contactmsg.valid || contactmsg.untouched\">\r\n        <div  *ngIf=\"contactmsg.errors && contactmsg.errors.required\">\r\n            Message is required\r\n        </div>\r\n      </div>\r\n      <p>\r\n        <button class=\"w3-button w3-light-grey w3-padding-large\" type=\"submit\" [disabled]=\"!contactForm.form.valid\">\r\n          <i class=\"fa fa-paper-plane\"></i> SEND MESSAGE\r\n        </button>\r\n      </p>\r\n    </form>\r\n  <!-- End Contact Section -->\r\n  </div>\r\n"
 
 /***/ }),
 
@@ -291,7 +292,9 @@ module.exports = "\n  <!-- Contact Section -->\n  <div class=\"w3-padding-64 w3-
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactComponent; });
+/* unused harmony export Contact */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_app_service__ = __webpack_require__("./src/service/app.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -302,10 +305,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var ContactComponent = (function () {
-    function ContactComponent() {
+    function ContactComponent(_appService) {
+        this._appService = _appService;
     }
     ContactComponent.prototype.ngOnInit = function () {
+        this.contactObj = new Contact();
+    };
+    ContactComponent.prototype.submit = function () {
+        console.log(this.contactObj);
+        this._appService.SendEmail(this.contactObj)
+            .subscribe(function (result) {
+            console.log(result);
+        }, function (error) {
+            console.log(error);
+        });
     };
     return ContactComponent;
 }());
@@ -315,9 +330,16 @@ ContactComponent = __decorate([
         template: __webpack_require__("./src/app/contact/contact.component.html"),
         styles: [__webpack_require__("./src/app/contact/contact.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__service_app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__service_app_service__["a" /* AppService */]) === "function" && _a || Object])
 ], ContactComponent);
 
+var Contact = (function () {
+    function Contact() {
+    }
+    return Contact;
+}());
+
+var _a;
 //# sourceMappingURL=contact.component.js.map
 
 /***/ }),
@@ -453,7 +475,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\r\n.modal {\r\n    position: fixed;\r\n    top: 20%;\r\n    right: 20%;\r\n    bottom: 0;\r\n    left: 20%;\r\n    z-index: 1050;\r\n    display: none;\r\n    overflow: hidden;\r\n    -webkit-overflow-scrolling: touch;\r\n    outline: 0;\r\n}\r\n .show {\r\n    display: block!important;\r\n}\r\n  .modal.fade .modal-dialog {\r\n    transition: -webkit-transform .3s ease-out;\r\n    transition: transform .3s ease-out;\r\n    transition: transform .3s ease-out, -webkit-transform .3s ease-out;\r\n    -webkit-transform: translate(0,-25%);\r\n    transform: translate(0,-25%);\r\n}\r\n  @media (min-width: 768px){ .modal-dialog {\r\n    width: 600px;\r\n    margin: 30px auto;\r\n}\r\n  }\r\n.modal-dialog {\r\n    position: relative;\r\n    width: auto;\r\n    margin: 10px;\r\n}\r\n  @media (min-width: 768px){\r\n.modal-content {\r\n    box-shadow: 0 5px 15px rgba(0,0,0,.5);\r\n}}\r\n.modal-content {\r\n    position: relative;\r\n    background-color: #fff;\r\n    background-clip: padding-box;\r\n    border: 1px solid #999;\r\n    border: 1px solid rgba(0,0,0,.2);\r\n    border-radius: 6px;\r\n    outline: 0;\r\n    box-shadow: 0 3px 9px rgba(0,0,0,.5);\r\n}\r\n.modal-header {\r\n    padding: 15px;\r\n    border-bottom: 1px solid #e5e5e5;\r\n    background-color: white;\r\n    border-radius: inherit;\r\n    color: black;\r\n}\r\n  .modal-title {\r\n    margin: 0;\r\n    line-height: 1.42857143;\r\n}\r\n.modal-body {\r\n    position: relative;\r\n    padding: 15px;\r\n    color:#222;\r\n}\r\n  .modal-footer {\r\n    padding: 15px;\r\n    text-align: right;\r\n    border-top: 1px solid #e5e5e5;\r\n    color:#222;\r\n}\r\n  .form-control {\r\n    display: block;\r\n    width: 100%;\r\n    height: 34px;\r\n    padding: 6px 12px;\r\n    font-size: 14px;\r\n    line-height: 1.42857143;\r\n    color: #555;\r\n    background-color: #fff;\r\n    background-image: none;\r\n    border: 1px solid #ccc;\r\n    border-radius: 4px;\r\n    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);\r\n    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;\r\n}\r\n\r\n\r\n.fade {\r\n    opacity: 0;\r\n    transition: opacity .15s linear;\r\n}\r\n \r\n.fade.in {\r\n    opacity: 1;\r\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -558,7 +580,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/navigation/navigation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<nav class=\"w3-sidebar w3-bar-block w3-small w3-hide-small w3-center\">\n  <!-- Avatar image in top left corner -->\n  <img src=\"../../assets/images/IMG_4264.jpg\" style=\"width:100%\">\n  <a routerLink=\"/home\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla1=\"routerLinkActive\" [ngClass]=\"rla1.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-home w3-xxlarge\"></i>\n    <p>HOME</p>\n  </a>\n  <a routerLink=\"/about\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla2=\"routerLinkActive\" [ngClass]=\"rla2.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-user w3-xxlarge\"></i>\n    <p>ABOUT</p>\n  </a>\n  <a routerLink=\"/projects\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla3=\"routerLinkActive\" [ngClass]=\"rla3.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-eye w3-xxlarge\"></i>\n    <p>PROJECTS</p>\n  </a>\n  <a routerLink=\"/contact\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla4=\"routerLinkActive\" [ngClass]=\"rla4.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-envelope w3-xxlarge\"></i>\n    <p>CONTACT</p>\n  </a>\n</nav>\n\n<!-- Navbar on small screens (Hidden on medium and large screens) -->\n<div class=\"w3-top w3-hide-large w3-hide-medium\" id=\"myNavbar\">\n  <div class=\"w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small\">\n    <a routerLink=\"/home\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla11=\"routerLinkActive\" [ngClass]=\"rla11.isActive?'w3-black':'w3-hover-black'\">HOME</a>\n    <a routerLink=\"/about\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla22=\"routerLinkActive\" [ngClass]=\"rla22.isActive?'w3-black':'w3-hover-black'\">ABOUT</a>\n    <a routerLink=\"/projects\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla33=\"routerLinkActive\" [ngClass]=\"rla33.isActive?'w3-black':'w3-hover-black'\">PROJECTS</a>\n    <a routerLink=\"/contact\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla44=\"routerLinkActive\" [ngClass]=\"rla44.isActive?'w3-black':'w3-hover-black'\">CONTACT</a>\n  </div>\n</div>\n"
+module.exports = "\n<nav class=\"w3-sidebar w3-bar-block w3-small w3-hide-small w3-center\">\n  <!-- Avatar image in top left corner -->\n  <img src=\"../../assets/images/IMG_4264.jpg\" style=\"width:100%\">\n  <a routerLink=\"/home\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla1=\"routerLinkActive\" [ngClass]=\"rla1.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-home w3-xxlarge\"></i>\n    <p>HOME</p>\n  </a>\n  <a routerLink=\"/about\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla2=\"routerLinkActive\" [ngClass]=\"rla2.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-user w3-xxlarge\"></i>\n    <p>ABOUT</p>\n  </a>\n  <a routerLink=\"/projects\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla3=\"routerLinkActive\" [ngClass]=\"rla3.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-tasks w3-xxlarge\"></i>\n    <p>PROJECTS</p>\n  </a>\n  <a routerLink=\"/contact\" class=\"w3-bar-item w3-button w3-padding-large\" routerLinkActive #rla4=\"routerLinkActive\" [ngClass]=\"rla4.isActive?'w3-black':'w3-hover-black'\">\n    <i class=\"fa fa-envelope w3-xxlarge\"></i>\n    <p>CONTACT</p>\n  </a>\n</nav>\n\n<!-- Navbar on small screens (Hidden on medium and large screens) -->\n<div class=\"w3-top w3-hide-large w3-hide-medium\" id=\"myNavbar\">\n  <div class=\"w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small\">\n    <a routerLink=\"/home\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla11=\"routerLinkActive\" [ngClass]=\"rla11.isActive?'w3-black':'w3-hover-black'\">HOME</a>\n    <a routerLink=\"/about\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla22=\"routerLinkActive\" [ngClass]=\"rla22.isActive?'w3-black':'w3-hover-black'\">ABOUT</a>\n    <a routerLink=\"/projects\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla33=\"routerLinkActive\" [ngClass]=\"rla33.isActive?'w3-black':'w3-hover-black'\">PROJECTS</a>\n    <a routerLink=\"/contact\" class=\"w3-bar-item w3-button\" style=\"width:25% !important\" routerLinkActive #rla44=\"routerLinkActive\" [ngClass]=\"rla44.isActive?'w3-black':'w3-hover-black'\">CONTACT</a>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -660,7 +682,7 @@ var PdfDownloaderComponent = (function () {
         var disposable = this.dialogService.addDialog(__WEBPACK_IMPORTED_MODULE_2__modal_popup_modal_popup_component__["a" /* ModalPopupComponent */], {
             title: 'Authorize',
             message: 'Please enter your access code'
-        })
+        }, { closeByClickingOutside: true })
             .subscribe(function (isConfirmed) {
             //We get dialog result
             if (isConfirmed != null && isConfirmed != undefined) {
@@ -851,10 +873,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AppService = (function () {
     function AppService(_http) {
         this._http = _http;
-        this._serviceUrl = 'api/hello';
+        this._serviceUrl = 'api/home';
     }
     AppService.prototype.sayHello = function () {
         return this._http.get(this._serviceUrl)
+            .map(function (response) {
+            return response.text();
+        });
+    };
+    AppService.prototype.SendEmail = function (contact) {
+        console.log(contact);
+        return this._http.post('api/home/SendEmail', contact)
             .map(function (response) {
             return response.text();
         });

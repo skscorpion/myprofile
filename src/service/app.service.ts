@@ -8,7 +8,7 @@ import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class AppService {
-    private _serviceUrl = 'api/hello';
+    private _serviceUrl = 'api/home';
     
     constructor(private _http: Http) { }
 
@@ -18,4 +18,11 @@ export class AppService {
                 return response.text();
             });
     }
+        SendEmail(contact): Observable <string>{
+            console.log(contact);
+            return this._http.post('api/home/SendEmail', contact)
+             .map((response: Response) => {
+                return response.text();
+            });
+        }
 }
